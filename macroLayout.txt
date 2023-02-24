@@ -1,0 +1,29 @@
+Layer 1:
+    Button 1: $$<
+    Button 2: \intfy
+    Button 3: \sqrt{}<
+    Button 4: _{}<
+    Button 5: \underline{}<
+    Button 6: ^{}<
+    Button 7: e
+    Button 8: \frac{}{}<<<
+    Button 12: \left|\right|<<<<<<
+    Button 13: \times 
+    Button 14: \vec 
+    Button 15: \left[\begin{array}{c c}\\ \end{array}\right]<<<<<<<<<<<<<<<<<<<<<
+    Button 16: \begin{pmatrix}\end{pmatrix}<<<<<<<<<<<<<
+    Button 21: \overbrace{}^{}<<<<
+    Button 22: \underbrace{}_{}<<<<
+    Button 23: \left.\begin{array}{c}\end{array}\right\}<<<<<<<<<<<<<<<<<<<
+    Button 24: \left\{\begin{array}{c}\end{array}\right.<<<<<<<<<<<<<<<<<<
+    Button 25: \longmapsto 
+    Button 26: \Rightarrow 
+    Button 27: \overset{!}{=} 
+    Button 28: \n\t\plain{\test<>UgABUGA ^{a}<$$}<<<>>>
+    Button 30: \lim\limits_{}<
+    Button 31: \int\limits_{}^{}<<<<
+    Button 32: \sum\limits_{}^{}<<<<
+Layer 2:
+    Button 1: \test
+Layer 3:
+    Button 2: 

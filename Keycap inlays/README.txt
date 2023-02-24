@@ -1,0 +1,2 @@
+Very cheaply made, but should be ok for most legends. The dimensions are acurate and fit the relegendable Keycaps.
+I tried making them in LaTeX, but with little success. Making tables in LaTeX is about as fun as using a sandpaper dildo.

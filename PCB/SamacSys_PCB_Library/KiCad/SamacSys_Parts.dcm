@@ -1,0 +1,87 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SJ2-35954B-SMT-TR
+D Phone Connectors 3.5mm Audio Jack SMT 4conductr Tip switc-1
+K
+F https://www.arrow.com/en/products/sj2-35954b-smt-tr/cui-devices
+$ENDCMP
+#
+$CMP PI4IOE5V6416LEX
+D Interface - I/O Expanders Interface IO Expandr
+K
+F https://www.mouser.co.uk/datasheet/2/115/PI4IOE5V6416-1488866.pdf
+$ENDCMP
+#
+$CMP LSF0204QPWRQ1
+D Automotive 4-Bit Bidirectional Multi-Voltage Level Translator for Open-Drain or Push- Pull Interface
+K
+F http://www.ti.com/lit/gpn/lsf0204-q1
+$ENDCMP
+#
+$CMP TP4056
+D 1A Standalone Linear Li-lon Battery Charger, SOP-8
+K
+F https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf
+$ENDCMP
+#
+$CMP FS312F-G
+D One Cell Lithium-ion/Polymer Battery Protection IC
+K
+F https://www.ic-fortune.com/upload/Download/FS312F-G-DS-12_EN.pdf
+$ENDCMP
+#
+$CMP FS8205A
+D Dual N-Channel Enahncement Mode Power MOSFET
+K
+F http://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf
+$ENDCMP
+#
+$CMP MT3608
+D High Efficiency 1.2MHz 2A Step Up Converter
+K
+F https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf
+$ENDCMP
+#
+$CMP SS34
+D TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V
+K
+F https://componentsearchengine.com/Datasheets/1/SS34.pdf
+$ENDCMP
+#
+$CMP IRLML6401
+D MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS
+K
+F 
+$ENDCMP
+#
+$CMP CD123D-B140LR
+D BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C
+K
+F https://www.bourns.com/docs/product-datasheets/cd123d-b.pdf?sfvrsn=54b574f6_7
+$ENDCMP
+#
+$CMP LM321MF
+D Low Power Single Op Amp
+K
+F http://www.ti.com/lit/ds/symlink/lm321.pdf
+$ENDCMP
+#
+$CMP ams1117-3.3v
+D 1A LOW DROPOUT VOLTAGE REGULATOR, SOT-223
+K
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
+$ENDCMP
+#
+$CMP BH-18650-PC
+D BATTERY HOLDER 18650 PC PIN
+K
+F http://www.memoryprotectiondevices.com/datasheets/BH-18650-PC-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

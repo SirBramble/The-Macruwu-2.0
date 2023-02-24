@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\#Elektronics\The Macruwu\#The macruwu 2.0\Bluetooth board\Bluetooth board.kicad_sch</source>
+    <date>27/01/2023 15:05:05</date>
+    <tool>Eeschema (6.0.10)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Bluetooth board.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>BH-18650-PC</value>
+      <footprint>SamacSys_Parts:BH18650PC</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/BH-18650-PC-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Description">BATTERY HOLDER 18650 PC PIN</field>
+        <field name="Height">21.31</field>
+        <field name="Manufacturer_Name">Memory Protection Devices</field>
+        <field name="Manufacturer_Part_Number">BH-18650-PC</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="BH-18650-PC" description="BATTERY HOLDER 18650 PC PIN"/>
+      <property name="Description" value="BATTERY HOLDER 18650 PC PIN"/>
+      <property name="Height" value="21.31"/>
+      <property name="Manufacturer_Name" value="Memory Protection Devices"/>
+      <property name="Manufacturer_Part_Number" value="BH-18650-PC"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85625f96-642b-4899-ae4e-3dfc6143783a</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7660d3ff-30a9-418e-bf37-5882a90b1338</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>251cc628-5a36-4a7d-aff9-b770c6b50304</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8992e6da-248d-4f9c-9b4f-5e8ad3985a9b</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7ae51f0-c5cc-42f8-87e2-e4d5aa759904</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6911ed8e-ccfc-44f6-9981-1984c80be9e9</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e58cd419-ee48-415a-b2c1-4bc3f76b2d16</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4f9f586-5f46-4657-b781-52049946e099</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>57f36265-e661-473c-ae61-51545f7d7193</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>GREEN</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2d30bf3-3d0d-43be-93a0-810b0a332615</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>RED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92f212e1-ac53-4a87-96fd-67735e7a5d86</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>CD123D-B140LR</value>
+      <footprint>SamacSys_Parts:CD123DB140LR</footprint>
+      <datasheet>https://www.bourns.com/docs/product-datasheets/cd123d-b.pdf?sfvrsn=54b574f6_7</datasheet>
+      <fields>
+        <field name="Arrow Part Number">CD123D-B140LR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/cd123d-b140lr/bourns?region=nac</field>
+        <field name="Description">BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C</field>
+        <field name="Height">1.16</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CD123D-B140LR</field>
+        <field name="Mouser Part Number">652-CD123D-B140LR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Bourns/CD123D-B140LR?qs=xhbEVWpZdWeACvF%2F8gDRTg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="CD123D-B140LR" description="BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C"/>
+      <property name="Description" value="BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C"/>
+      <property name="Height" value="1.16"/>
+      <property name="Manufacturer_Name" value="Bourns"/>
+      <property name="Manufacturer_Part_Number" value="CD123D-B140LR"/>
+      <property name="Mouser Part Number" value="652-CD123D-B140LR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Bourns/CD123D-B140LR?qs=xhbEVWpZdWeACvF%2F8gDRTg%3D%3D"/>
+      <property name="Arrow Part Number" value="CD123D-B140LR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/cd123d-b140lr/bourns?region=nac"/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a113a0f-8bd8-4e8b-8169-a677b0f44e49</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>SS34</value>
+      <footprint>SamacSys_Parts:DIOM7959X262N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/SS34.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SS34</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ss34/taiwan-semiconductor?region=nac</field>
+        <field name="Description">TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V</field>
+        <field name="Height">2.62</field>
+        <field name="Manufacturer_Name">Taiwan Semiconductor</field>
+        <field name="Manufacturer_Part_Number">SS34</field>
+        <field name="Mouser Part Number">821-SS34</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Taiwan-Semiconductor/SS34?qs=JV7lzlMm3yIimVqgKV%2F1SA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="SS34" description="TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V"/>
+      <property name="Description" value="TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V"/>
+      <property name="Height" value="2.62"/>
+      <property name="Manufacturer_Name" value="Taiwan Semiconductor"/>
+      <property name="Manufacturer_Part_Number" value="SS34"/>
+      <property name="Mouser Part Number" value="821-SS34"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Taiwan-Semiconductor/SS34?qs=JV7lzlMm3yIimVqgKV%2F1SA%3D%3D"/>
+      <property name="Arrow Part Number" value="SS34"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ss34/taiwan-semiconductor?region=nac"/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15e40eeb-1153-4986-bfee-34934fd1bd9d</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>CD123D-B140LR</value>
+      <footprint>SamacSys_Parts:CD123DB140LR</footprint>
+      <datasheet>https://www.bourns.com/docs/product-datasheets/cd123d-b.pdf?sfvrsn=54b574f6_7</datasheet>
+      <fields>
+        <field name="Arrow Part Number">CD123D-B140LR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/cd123d-b140lr/bourns?region=nac</field>
+        <field name="Description">BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C</field>
+        <field name="Height">1.16</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CD123D-B140LR</field>
+        <field name="Mouser Part Number">652-CD123D-B140LR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Bourns/CD123D-B140LR?qs=xhbEVWpZdWeACvF%2F8gDRTg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="CD123D-B140LR" description="BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C"/>
+      <property name="Description" value="BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C"/>
+      <property name="Height" value="1.16"/>
+      <property name="Manufacturer_Name" value="Bourns"/>
+      <property name="Manufacturer_Part_Number" value="CD123D-B140LR"/>
+      <property name="Mouser Part Number" value="652-CD123D-B140LR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Bourns/CD123D-B140LR?qs=xhbEVWpZdWeACvF%2F8gDRTg%3D%3D"/>
+      <property name="Arrow Part Number" value="CD123D-B140LR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/cd123d-b140lr/bourns?region=nac"/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7807d20e-7ff9-4e98-9f58-213c3ebd5560</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>FS312F-G</value>
+      <footprint>SamacSys_Parts:SOT95P280X145-6N</footprint>
+      <datasheet>https://www.ic-fortune.com/upload/Download/FS312F-G-DS-12_EN.pdf</datasheet>
+      <fields>
+        <field name="Description">One Cell Lithium-ion/Polymer Battery Protection IC</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Fortune Semiconductor Corporation</field>
+        <field name="Manufacturer_Part_Number">FS312F-G</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="FS312F-G" description="One Cell Lithium-ion/Polymer Battery Protection IC"/>
+      <property name="Description" value="One Cell Lithium-ion/Polymer Battery Protection IC"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Fortune Semiconductor Corporation"/>
+      <property name="Manufacturer_Part_Number" value="FS312F-G"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>655407dc-bc5a-40f7-bb06-babad6f02c46</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>IRLML6401</value>
+      <footprint>SamacSys_Parts:SOT95P237X112-3N</footprint>
+      <fields>
+        <field name="Description">MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS</field>
+        <field name="Height">1.12</field>
+        <field name="Manufacturer_Name">UMW(Youtai Semiconductor Co., Ltd.)</field>
+        <field name="Manufacturer_Part_Number">IRLML6401</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="IRLML6401" description="MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS"/>
+      <property name="Description" value="MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS"/>
+      <property name="Height" value="1.12"/>
+      <property name="Manufacturer_Name" value="UMW(Youtai Semiconductor Co., Ltd.)"/>
+      <property name="Manufacturer_Part_Number" value="IRLML6401"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d93fa70-2ea1-4a50-9409-d5c6dab3a0ff</tstamps>
+    </comp>
+    <comp ref="IC3">
+      <value>LM321MF</value>
+      <footprint>SamacSys_Parts:SOT95P280X145-5N</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm321.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">LM321MF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lm321mf/texas-instruments?region=nac</field>
+        <field name="Description">Low Power Single Op Amp</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM321MF</field>
+        <field name="Mouser Part Number">926-LM321MF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM321MF?qs=X1J7HmVL2ZEDCfhyA%252BlmsA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="LM321MF" description="Low Power Single Op Amp"/>
+      <property name="Description" value="Low Power Single Op Amp"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="LM321MF"/>
+      <property name="Mouser Part Number" value="926-LM321MF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM321MF?qs=X1J7HmVL2ZEDCfhyA%252BlmsA%3D%3D"/>
+      <property name="Arrow Part Number" value="LM321MF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lm321mf/texas-instruments?region=nac"/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>981b4e26-809a-4ac4-b33f-102d8c8fac90</tstamps>
+    </comp>
+    <comp ref="IC4">
+      <value>MT3608</value>
+      <footprint>SamacSys_Parts:SOT95P280X145-6N</footprint>
+      <datasheet>https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf</datasheet>
+      <fields>
+        <field name="Description">High Efficiency 1.2MHz 2A Step Up Converter</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Aerosemi</field>
+        <field name="Manufacturer_Part_Number">MT3608</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="MT3608" description="High Efficiency 1.2MHz 2A Step Up Converter"/>
+      <property name="Description" value="High Efficiency 1.2MHz 2A Step Up Converter"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Aerosemi"/>
+      <property name="Manufacturer_Part_Number" value="MT3608"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd8929df-1ed3-4410-9929-134221b3b197</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>TP4056</value>
+      <footprint>SamacSys_Parts:SOIC127P600X175-9N</footprint>
+      <datasheet>https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf</datasheet>
+      <fields>
+        <field name="Description">1A Standalone Linear Li-lon Battery Charger, SOP-8</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">NanJing Top Power</field>
+        <field name="Manufacturer_Part_Number">TP4056</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="TP4056" description="1A Standalone Linear Li-lon Battery Charger, SOP-8"/>
+      <property name="Description" value="1A Standalone Linear Li-lon Battery Charger, SOP-8"/>
+      <property name="Height" value="1.75"/>
+      <property name="Manufacturer_Name" value="NanJing Top Power"/>
+      <property name="Manufacturer_Part_Number" value="TP4056"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a54479db-7115-40d7-872f-24fcded94901</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>ON/OFF switch</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c5d460d-414b-415e-9ac7-21e19eec1be3</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Battery Bluetooth Expansion</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c24859af-ff9b-4e6b-b3f0-dfda35baee5c</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Battery IN</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e64ac151-04ee-4cc4-ab46-eef6e4914991</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_02x04_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f7e769d-d78b-4e62-818d-f958f6e33541</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>22uH</value>
+      <footprint>Inductor_SMD:L_12x12mm_H6mm</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93efba06-dc0c-4667-9678-8372bfaa4239</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>FS8205A</value>
+      <footprint>SamacSys_Parts:SOP65P640X120-8N</footprint>
+      <datasheet>http://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf</datasheet>
+      <fields>
+        <field name="Description">Dual N-Channel Enahncement Mode Power MOSFET</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Fortune Semiconductor Corporation</field>
+        <field name="Manufacturer_Part_Number">FS8205A</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="FS8205A" description="Dual N-Channel Enahncement Mode Power MOSFET"/>
+      <property name="Description" value="Dual N-Channel Enahncement Mode Power MOSFET"/>
+      <property name="Height" value="1.2"/>
+      <property name="Manufacturer_Name" value="Fortune Semiconductor Corporation"/>
+      <property name="Manufacturer_Part_Number" value="FS8205A"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0de19d9c-6415-427b-8dbf-5c869455ee89</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Function">Charge current set Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Function" value="Charge current set Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5220cc4-2495-4f43-aebf-a6a361e295f8</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdcaf773-227e-403b-ac98-9e9e6f385b9a</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26118e84-b130-4c45-95a5-e322d349b26e</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>058a5df1-399a-408e-a355-1074b6d1ac9f</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>baaaf6d5-3a85-423a-a693-d878226cbd29</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>4.99M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be95c72f-3ddf-4566-a822-5760eaeddd5f</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value> 7.5k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6743e3c0-13f5-4fe6-8b8e-b68635b09b39</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>926871a0-8a0f-440c-b715-b1bb92a66adf</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a1ba041-9628-4b41-89a2-dc52dfa93545</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>4.99M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56fdd7a7-c694-44cd-a346-078ba7e4c24a</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9bfa5f7-f362-4047-afb6-4e72f94e1387</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>082e4000-9f73-4075-8316-424090042055</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a30030af-b397-455b-9e06-71c11e3de651</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b2a9673-4f6e-4e19-a594-220f3c2a89ed</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ebdfb23-5c05-4cb8-ba6d-02674ffbd468</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e8ef53f-9a44-4215-9e9a-73cc24afd24f</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MOUDLE-SEEEDUINO-XIAO-ESP32C3</value>
+      <footprint>xiao ESP32C3_PCB:MOUDLE14P-SMD-2.54-21X17.8MM</footprint>
+      <libsource lib="MOUDLE-SEEEDUINO-XIAO-ESP32C3" part="MOUDLE-SEEEDUINO-XIAO-ESP32C3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad5a4e8d-d8c7-4bfe-9688-6449832558e9</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>AMS1117-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.advanced-monolithic.com/pdf/ds1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AMS1117-3.3" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bluetooth board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf0fbe16-968d-46fe-adae-01386823b0a8</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOUDLE-SEEEDUINO-XIAO-ESP32C3" part="MOUDLE-SEEEDUINO-XIAO-ESP32C3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOUDLE-SEEEDUINO-XIAO-ESP32C3</field>
+        <field name="Footprint">MOUDLE14P-SMD-2.54-21X17.8MM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PA02_A0_D0" type="bidirectional"/>
+        <pin num="2" name="PA4_A1_D1" type="bidirectional"/>
+        <pin num="3" name="PA10_A2_D2" type="bidirectional"/>
+        <pin num="4" name="PA11_A3_D3" type="bidirectional"/>
+        <pin num="5" name="PA8_A4_D4_SDA" type="bidirectional"/>
+        <pin num="6" name="PA9_A5_D5_SCL" type="bidirectional"/>
+        <pin num="7" name="PB08_A6_D6_TX" type="bidirectional"/>
+        <pin num="8" name="PB09_A7_D7_RX" type="bidirectional"/>
+        <pin num="9" name="PA7_A8_D8_SCK" type="bidirectional"/>
+        <pin num="10" name="PA5_A9_D9_MISO" type="bidirectional"/>
+        <pin num="11" name="PA6_A10_D10_MOSI" type="bidirectional"/>
+        <pin num="12" name="3V3" type="bidirectional"/>
+        <pin num="13" name="GND" type="bidirectional"/>
+        <pin num="14" name="5V" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AMS1117-3.3">
+      <description>1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223</description>
+      <docs>http://www.advanced-monolithic.com/pdf/ds1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMS1117-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.advanced-monolithic.com/pdf/ds1117.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="BH-18650-PC">
+      <description>BATTERY HOLDER 18650 PC PIN</description>
+      <docs>http://www.memoryprotectiondevices.com/datasheets/BH-18650-PC-datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">BH-18650-PC</field>
+        <field name="Footprint">BH18650PC</field>
+        <field name="Datasheet">http://www.memoryprotectiondevices.com/datasheets/BH-18650-PC-datasheet.pdf</field>
+        <field name="Description">BATTERY HOLDER 18650 PC PIN</field>
+        <field name="Height">21.31</field>
+        <field name="Manufacturer_Name">Memory Protection Devices</field>
+        <field name="Manufacturer_Part_Number">BH-18650-PC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="CD123D-B140LR">
+      <description>BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C</description>
+      <docs>https://www.bourns.com/docs/product-datasheets/cd123d-b.pdf?sfvrsn=54b574f6_7</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">CD123D-B140LR</field>
+        <field name="Footprint">CD123DB140LR</field>
+        <field name="Datasheet">https://www.bourns.com/docs/product-datasheets/cd123d-b.pdf?sfvrsn=54b574f6_7</field>
+        <field name="Description">BOURNS - CD123D-B140LR - Small Signal Schottky Diode, Single, 40 V, 1 A, 380 mV, 20 A, 125 C</field>
+        <field name="Height">1.16</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CD123D-B140LR</field>
+        <field name="Mouser Part Number">652-CD123D-B140LR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Bourns/CD123D-B140LR?qs=xhbEVWpZdWeACvF%2F8gDRTg%3D%3D</field>
+        <field name="Arrow Part Number">CD123D-B140LR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/cd123d-b140lr/bourns?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="FS312F-G">
+      <description>One Cell Lithium-ion/Polymer Battery Protection IC</description>
+      <docs>https://www.ic-fortune.com/upload/Download/FS312F-G-DS-12_EN.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">FS312F-G</field>
+        <field name="Footprint">SOT95P280X145-6N</field>
+        <field name="Datasheet">https://www.ic-fortune.com/upload/Download/FS312F-G-DS-12_EN.pdf</field>
+        <field name="Description">One Cell Lithium-ion/Polymer Battery Protection IC</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Fortune Semiconductor Corporation</field>
+        <field name="Manufacturer_Part_Number">FS312F-G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OD" type="passive"/>
+        <pin num="2" name="CS" type="passive"/>
+        <pin num="3" name="OC" type="passive"/>
+        <pin num="4" name="TD" type="passive"/>
+        <pin num="5" name="VCC" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="FS8205A">
+      <description>Dual N-Channel Enahncement Mode Power MOSFET</description>
+      <docs>http://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FS8205A</field>
+        <field name="Footprint">SOP65P640X120-8N</field>
+        <field name="Datasheet">http://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf</field>
+        <field name="Description">Dual N-Channel Enahncement Mode Power MOSFET</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Fortune Semiconductor Corporation</field>
+        <field name="Manufacturer_Part_Number">FS8205A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D12_1" type="passive"/>
+        <pin num="2" name="S1_1" type="passive"/>
+        <pin num="3" name="S1_2" type="passive"/>
+        <pin num="4" name="G1" type="passive"/>
+        <pin num="5" name="G2" type="passive"/>
+        <pin num="6" name="S2_1" type="passive"/>
+        <pin num="7" name="S2_2" type="passive"/>
+        <pin num="8" name="D12_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="IRLML6401">
+      <description>MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">IRLML6401</field>
+        <field name="Footprint">SOT95P237X112-3N</field>
+        <field name="Description">MOSFET P Channel 12V 4.3A 950mV @ 250uA 50m @ 4.3A,4.5V SOT-23 RoHS</field>
+        <field name="Height">1.12</field>
+        <field name="Manufacturer_Name">UMW(Youtai Semiconductor Co., Ltd.)</field>
+        <field name="Manufacturer_Part_Number">IRLML6401</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="LM321MF">
+      <description>Low Power Single Op Amp</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm321.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LM321MF</field>
+        <field name="Footprint">SOT95P280X145-5N</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm321.pdf</field>
+        <field name="Description">Low Power Single Op Amp</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM321MF</field>
+        <field name="Mouser Part Number">926-LM321MF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM321MF?qs=X1J7HmVL2ZEDCfhyA%252BlmsA%3D%3D</field>
+        <field name="Arrow Part Number">LM321MF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lm321mf/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+IN" type="passive"/>
+        <pin num="2" name="V-" type="passive"/>
+        <pin num="3" name="-IN" type="passive"/>
+        <pin num="4" name="OUTPUT" type="passive"/>
+        <pin num="5" name="V+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="MT3608">
+      <description>High Efficiency 1.2MHz 2A Step Up Converter</description>
+      <docs>https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MT3608</field>
+        <field name="Footprint">SOT95P280X145-6N</field>
+        <field name="Datasheet">https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf</field>
+        <field name="Description">High Efficiency 1.2MHz 2A Step Up Converter</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Aerosemi</field>
+        <field name="Manufacturer_Part_Number">MT3608</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="FB" type="passive"/>
+        <pin num="4" name="EN" type="passive"/>
+        <pin num="5" name="IN" type="passive"/>
+        <pin num="6" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="SS34">
+      <description>TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/SS34.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SS34</field>
+        <field name="Footprint">DIOM7959X262N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/SS34.pdf</field>
+        <field name="Description">TAIWAN SEMICONDUCTOR - SS34 - DIODE, SCHOTTKY, 3A, 40V</field>
+        <field name="Height">2.62</field>
+        <field name="Manufacturer_Name">Taiwan Semiconductor</field>
+        <field name="Manufacturer_Part_Number">SS34</field>
+        <field name="Mouser Part Number">821-SS34</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Taiwan-Semiconductor/SS34?qs=JV7lzlMm3yIimVqgKV%2F1SA%3D%3D</field>
+        <field name="Arrow Part Number">SS34</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ss34/taiwan-semiconductor?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="TP4056">
+      <description>1A Standalone Linear Li-lon Battery Charger, SOP-8</description>
+      <docs>https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TP4056</field>
+        <field name="Footprint">SOIC127P600X175-9N</field>
+        <field name="Datasheet">https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf</field>
+        <field name="Description">1A Standalone Linear Li-lon Battery Charger, SOP-8</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">NanJing Top Power</field>
+        <field name="Manufacturer_Part_Number">TP4056</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TEMP1" type="passive"/>
+        <pin num="2" name="PROG2" type="passive"/>
+        <pin num="3" name="GND_3" type="passive"/>
+        <pin num="4" name="VCC4" type="passive"/>
+        <pin num="5" name="BAT" type="passive"/>
+        <pin num="6" name="~{STDBY}" type="passive"/>
+        <pin num="7" name="~{CHRG}" type="passive"/>
+        <pin num="8" name="CE" type="passive"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="MOUDLE-SEEEDUINO-XIAO-ESP32C3">
+      <uri>D:\#Elektronics\The Macruwu\#The macruwu 2.0\Bluetooth board/Seeeduino xiao ESP32C3 KiCAD Library/MOUDLE-SEEEDUINO-XIAO-ESP32C3.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>D:/#Elektronics/SamacSys_PCB_Library/KiCad/SamacSys_Parts.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="IC3" pin="5" pinfunction="V+" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="3V3" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="CE">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PB09_A7_D7_RX" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="CHARGE_SENSE">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PA4_A1_D1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="CNS">
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PB08_A6_D6_TX" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="ESP_5V">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pintype="passive"/>
+      <node ref="D5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="5V" pintype="bidirectional"/>
+      <node ref="U2" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="IC3" pin="2" pinfunction="V-" pintype="passive"/>
+      <node ref="IC4" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="TEMP1" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="GND_3" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="EP" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S1_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S1_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="7" name="LED_C">
+      <node ref="J1" pin="7" pinfunction="~{CHRG}" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="LED_S">
+      <node ref="J1" pin="6" pinfunction="~{STDBY}" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="MISO">
+      <node ref="J5" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PA5_A9_D9_MISO" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="MOSI">
+      <node ref="J5" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PA6_A10_D10_MOSI" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="IC2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="IC4" pin="4" pinfunction="EN" pintype="passive"/>
+      <node ref="IC4" pin="5" pinfunction="IN" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2" pintype="passive"/>
+      <node ref="IC4" pin="1" pinfunction="SW" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(IC1-Pad2)">
+      <node ref="IC1" pin="2" pinfunction="CS" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(IC1-Pad5)">
+      <node ref="IC1" pin="5" pinfunction="VCC" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(IC2-Pad2)">
+      <node ref="IC2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(IC3-Pad1)">
+      <node ref="IC3" pin="1" pinfunction="+IN" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(IC3-Pad3)">
+      <node ref="IC3" pin="3" pinfunction="-IN" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(IC4-Pad3)">
+      <node ref="IC4" pin="3" pinfunction="FB" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="PROG2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="OC">
+      <node ref="IC1" pin="3" pinfunction="OC" pintype="passive"/>
+      <node ref="Q1" pin="4" pinfunction="G1" pintype="passive"/>
+    </net>
+    <net code="25" name="OD">
+      <node ref="IC1" pin="1" pinfunction="OD" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="G2" pintype="passive"/>
+    </net>
+    <net code="26" name="P_MOS_SWITCH">
+      <node ref="IC2" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="SCK">
+      <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="PA7_A8_D8_SCK" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="SCL_0">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="PA9_A5_D5_SCL" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="SDA_0">
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="PA8_A4_D4_SDA" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="VBAT+">
+      <node ref="BT1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="BAT" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="31" name="VBAT-">
+      <node ref="BT1" pin="1" pinfunction="-" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="S2_1" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="S2_2" pintype="passive"/>
+    </net>
+    <net code="32" name="VBAT_5V">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D3" pin="2" pintype="passive"/>
+      <node ref="D4" pin="1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="VBAT_SENSE">
+      <node ref="IC3" pin="4" pinfunction="OUTPUT" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PA02_A0_D0" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="VBUS">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="VCC4" pintype="passive"/>
+      <node ref="J1" pin="8" pinfunction="CE" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="unconnected-(IC1-Pad4)">
+      <node ref="IC1" pin="4" pinfunction="TD" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(IC4-Pad6)">
+      <node ref="IC4" pin="6" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J5-Pad8)">
+      <node ref="J5" pin="8" pinfunction="Pin_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="D12_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(Q1-Pad8)">
+      <node ref="Q1" pin="8" pinfunction="D12_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U1-Pad3)">
+      <node ref="U1" pin="3" pinfunction="PA10_A2_D2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="PA11_A3_D3" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

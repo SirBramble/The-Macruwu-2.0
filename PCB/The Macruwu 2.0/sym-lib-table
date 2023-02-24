@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Switch footprints")(type "KiCad")(uri "${KIPRJMOD}/Switch footprints.kicad_sym")(options "")(descr ""))
+  (lib (name "Seeeduino XIAO")(type "Legacy")(uri "${KIPRJMOD}/Seeeduino XIAO KICAD/Seeeduino XIAO.lib")(options "")(descr ""))
+)
