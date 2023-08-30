@@ -1,33 +1,94 @@
+%                              Keymap Layout Example
+% ----------------------------------------------------------------------------------------
+% Use "Layer x:"  to set the layer for all following Button mappings
+% Use "Button x: ..." to set text/commands to be executed when button x is pressed
+% Commands / special characters:
+% ------------------------------
+% \t 		--> Tabstop
+% \n 		--> Enter
+% \plain{...} 	--> Prints caracters in brackets as plain text
+% \STRG		--> Control key
+% \SHIFT	--> Shift key
+% \ALT		--> Alt key
+% \ALTGR	--> AltGr key
+% \TAB		--> Tabstop
+% \SEND		--> Sends everything previously in buffer and clears it
+% <		--> left arrow key
+% >		--> right arrow key
+% -------------------------------------------------------------------------------------------
+% Example:
+% -------------------------------------------------------------------------------------------
+% Layer 1:
+%     Button 1: \frac{}{}<<<
+%     Button 2: e
+%     Button 3: \STRGa\SEND\STRGx\SENDSend picures of spiderman to me\ALTGRq\SENDspidermanpictures.web\STRGv
+%     Button 4: for TAB type \plain{\t} and for ENTER type \plain{\n}
+% Layer 2:
+%     Button 1: if you switched to layer 2 you will see this text if you press button 1
+% -------------------------------------------------------------------------------------------
 Layer 1:
-    Button 1: $$<
-    Button 2: \intfy
-    Button 3: \sqrt{}<
-    Button 4: _{}<
-    Button 5: \underline{}<
-    Button 6: ^{}<
-    Button 7: e
-    Button 8: \frac{}{}<<<
-    Button 10: \plain{\text{}}<<
-    Button 11: \begin{array}{l l}\end{array}<<<<<<<<<<<
-    Button 12: \left|\right|<<<<<<<
-    Button 13: \plain{\times} 
-    Button 14: \vec 
-    Button 15: \left[\begin{array}{c c}\end{array}\right]<<<<<<<<<<<<<<<<<<
-    Button 16: \begin{pmatrix}\end{pmatrix}<<<<<<<<<<<<<
-    Button 21: \overbrace{}^{}<<<<
-    Button 22: \underbrace{}_{}<<<<
-    Button 23: \left.\begin{array}{c}\end{array}\right\}<<<<<<<<<<<<<<<<<<<
-    Button 24: \left\{\begin{array}{c}\end{array}\right.<<<<<<<<<<<<<<<<<<
-    Button 25: \longmapsto 
-    Button 26: \Rightarrow 
-    Button 27: \overset{!}{=} 
-    Button 28:  \ 
-    Button 29: 1 = !\n2 = "\n3 = §\n4 = $\n5 = &\n6 = &\n7 = /\n8 = (\n9 = )\n0 = =\n
-    Button 30: \lim\limits_{}<
-    Button 31: \int\limits_{}^{}<<<<
-    Button 32: \sum\limits_{}^{}<<<<
-    Button 33: \t test
+    Button 1: \frac{}{}<<<
+    Button 2: e
+    Button 3: ^{}<
+    Button 4: \underline{}<
+    Button 5: _{}<
+    Button 6: \sqrt{}<
+    Button 7: \infty
+    Button 8: $$<
+    Button 9: \begin{pmatrix}\end{pmatrix}<<<<<<<<<<<<<
+    Button 10: \left[\begin{array}{c c}\end{array}\right]<<<<<<<<<<<<<<<<<<
+    Button 11: \vec 
+    Button 12: \plain{\times} 
+    Button 13: \left|\right|<<<<<<<
+    Button 14: 
+    Button 15: 
+    Button 16: 
+    Button 17: \left\{\begin{array}{l}\end{array}\right.<<<<<<<<<<<<<<<<<<<
+    Button 18: \left.\begin{array}{l}\end{array}\right\}<<<<<<<<<<<<<<<<<<<
+    Button 19: \underbrace{}_{}<<<<
+    Button 20: \overbrace{}^{}<<<<
+    Button 21: 
+    Button 22: 
+    Button 23:
+    Button 24: \mintinline{c}{
+    Button 25: \sum\limits_{}^{}<<<<
+    Button 26: \int\limits_{}^{}<<<<
+    Button 27: \lim\limits_{}<
+    Button 28: \mathscr{L}\left\{\right\}<<<<<<<<
+    Button 29: \SWITCH{2}
+    Button 30: \overset{!}{=} 
+    Button 31: \quad \Rightarrow \quad 
+    Button 32: \longmapsto 
 Layer 2:
-    Button 1: \test
-Layer 3:
-    Button 2: 
+    Button 1: \STRGx\frac{}{}<<<\STRGv
+    Button 2: e
+    Button 3: \STRGx^{}<\STRGv
+    Button 4: \STRGx\underline{}<\STRGv
+    Button 5: \STRGx_{}<\STRGv
+    Button 6: \STRGx\sqrt{}<\STRGv
+    Button 7: \infty
+    Button 8: \STRGx$$<\STRGv
+    Button 9: \STRGx\begin{pmatrix}\end{pmatrix}<<<<<<<<<<<<<\STRGv
+    Button 10: \STRGx\left[\begin{array}{c c}\end{array}\right]<<<<<<<<<<<<<<<<<<\STRGv
+    Button 11: \STRGx\vec \STRGv
+    Button 12: \plain{\times} 
+    Button 13: \STRGx\left|\right|<<<<<<<\STRGv
+    Button 14: 
+    Button 15: 
+    Button 16: 
+    Button 17: \STRGx\left\{\begin{array}{l}\end{array}\right.<<<<<<<<<<<<<<<<<<\STRGv
+    Button 18: \STRGx\left.\begin{array}{l}\end{array}\right\}<<<<<<<<<<<<<<<<<<<\STRGv
+    Button 19: \STRGx\underbrace{}_{}<<<<\STRGv
+    Button 20: \STRGx\overbrace{}^{}<<<<\STRGv
+    Button 21: 
+    Button 22: 
+    Button 23:
+    Button 24: \STRGx\mintinline{c}{}<\STRGv
+    Button 25: \STRGx\sum\limits_{}^{}<<<<\STRGv
+    Button 26: \STRGx\int\limits_{}^{}<<<<\STRGv
+    Button 27: \STRGx\lim\limits_{}<\STRGv
+    Button 28: \mathscr{L}^{-1}\left\{\right\}<<<<<<<<
+    Button 29: \SWITCH{1}
+    Button 30: \overset{!}{=} 
+    Button 31: \Rightarrow 
+    Button 32: \longmapsto 

@@ -25,39 +25,34 @@ void Expander::setRemapTable(uint8_t *newRemapTable){
 PCA9555D::PCA9555D(uint8_t address){
   Expander::address = address;
   }
-
+void PCA9555D::init(){
+  //Nothing here. If something needs to be set, put here.
+}
 bool PCA9555D::getState(uint8_t pin){
   if(pin >= PINCOUNT){
     return 0;
   }
+  pin = remapTable[pin];
+  debounce();
+  return state_db[pin];
+  /*
   if(debounce()){
-    if(state_db[pin] == 1){
-      //state_db[pin] = 0;
-      //state_prev[pin] = 0;
-      return 1;
-    }
-    else{
-      return 0;  
-    }
+    if(state_db[pin] == 1) return 1;
+    else return 0;
   }
-  else if(state_db[pin] == 1){
-    //state_db[pin] = 0;
-    //state_prev[pin] = 0;
-    return 1;
-  }
-  else{
-    return 0;
-  }
+  else if(state_db[pin] == 1) return 1;
+  else return 0;
+  */
 }
 
 bool PCA9555D::getStatePulse_on(uint8_t pin){
   if(pin >= PINCOUNT){
     return 0;
   }
+  pin = remapTable[pin];
   if(debounce()){
     if(state_db_pulse_on[pin] == 1){
       state_db_pulse_on[pin] = 0;
-      //state_prev[pin] = 0;
       return 1;
     }
     else{
@@ -66,7 +61,6 @@ bool PCA9555D::getStatePulse_on(uint8_t pin){
   }
   else if(state_db_pulse_on[pin] == 1){
     state_db_pulse_on[pin] = 0;
-    //state_prev[pin] = 0;
     return 1;
   }
   else{
@@ -75,24 +69,22 @@ bool PCA9555D::getStatePulse_on(uint8_t pin){
 }
 
 bool PCA9555D::getStatePulse_off(uint8_t pin){
+  if(pin >= PINCOUNT){
+    return 0;
+  }
+  pin = remapTable[pin];
   if(debounce()){
     if(state_db_pulse_off[pin] == 1){
       state_db_pulse_off[pin] = 0;
-      //state_prev[pin] = 0;
       return 1;
     }
-    else{
-      return 0;  
-    }
+    else return 0;  
   }
   else if(state_db_pulse_off[pin] == 1){
     state_db_pulse_off[pin] = 0;
-    //state_prev[pin] = 0;
     return 1;
   }
-  else{
-    return 0;
-  }
+  else return 0;
 }
 
 
@@ -236,32 +228,25 @@ void PI4IOE5V6416::debounce(){
   for(uint8_t pin = 0; pin < PINCOUNT; pin++){
     switch(sm_state[pin]){
       case 0:
-        //state_db_pulse_off[pin] = 0;
         if(state[pin] == 1){
           state_db[pin] = 1;
-          //state_db_pulse_on[pin] = 1;
           sm_state[pin] = 1;
-          //Serial.println("case 0");
         }
         break;
       case 1:
         if(state[pin] == 1){
-          //state_db[pin] = 1;
           state_db_pulse_on[pin] = 1;
           sm_state[pin] = 2;
-          //Serial.println("case 1");
         }
         else{
           sm_state[pin] = 0;
         }
         break;
       case 2:
-        //state_db_pulse_on[pin] = 0;
         if(state[pin] == 0){
           state_db[pin] = 0;
           state_db_pulse_off[pin] = 1;
           sm_state[pin] = 0;
-          //Serial.println("case 2");
         }
         break;
       default:

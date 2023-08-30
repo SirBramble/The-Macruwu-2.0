@@ -327,7 +327,7 @@ void Keymap::import(){
   Serial.println("Keymap Import:");
   #endif
     for(int i = 0; i < ammountLayers; i++){                   //Clear Mapping Structure
-      for(int n = 0; n < AMMOUNT_KEYS; n++){
+      for(int n = 0; n < ammountKeys; n++){
         this->set(i, n, "");
       }
     }
@@ -361,6 +361,10 @@ void Keymap::import(){
     
     while (macroLayout.available()) {
       tmp = macroLayout.readStringUntil('\n');
+      if(tmp.indexOf("%") == 0){
+        Serial.println("Skipped Line, found comment");
+        continue;
+      }
       if(tmp.indexOf("Layer") != -1){
         currentLayer = getNum(tmp) - 1;
         if(currentLayer == -1){

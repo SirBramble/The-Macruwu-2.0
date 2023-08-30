@@ -28,6 +28,7 @@ class Expander{
 class PCA9555D: public Expander{
   public:
     PCA9555D(uint8_t address);
+    void init();
     bool getState(uint8_t pin);
     bool getStatePulse_on(uint8_t pin);
     bool getStatePulse_off(uint8_t pin);

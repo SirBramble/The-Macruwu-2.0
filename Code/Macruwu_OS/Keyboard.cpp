@@ -72,6 +72,35 @@ Keyboard::Keyboard(String filename, int ammountLayers, int ammountKeys, uint8_t 
     this->ammountKeys = ammountKeys;
 }
 
+void Keyboard::init(){          //sets up flash and runs initial read of file
+  if(HIDEnabled){
+    usb_hid.begin();
+    int i = 0;
+    while( !TinyUSBDevice.mounted() && (i < 30)){
+      delay(100);
+      i++;
+      Serial.print("Crashing");
+    }
+    if(i >=30){
+      this->bluetoothMode = 1;
+      Serial.print("Bluetooth mode started!");
+    }
+  }
+  keymap_ptr = std::unique_ptr<Keymap>(new Keymap(filename, ammountLayers, ammountKeys));
+  keymap_ptr->init();
+  interpreterBuffer.push_back(new Keysycode(0,0,RID_KEYBOARD));
+  flash_setup();
+  readFile();
+}
+
+void Keyboard::disableHID(){
+  HIDEnabled = 0;
+}
+
+bool Keyboard::HIDdisabled(){
+  return !HIDEnabled;
+}
+
 void Keyboard::readFile(){
     keymap_ptr->import();
 }
@@ -86,7 +115,11 @@ void Keyboard::set_string_in_file(int layer, int button, String string_to_write)
 
 ///////////////////////////////////////////////////////////////////////////////////////////Interpreter//////////////////////////////////////////////////////////////////////////////////////////////////
 //____________________________________________________________________________________________________________________________________________________________________________________________________//
-void Keyboard::interpret(int layer, int button){
+uint8_t Keyboard::interpret(int layer, int button){
+  if(HIDEnabled == 0){
+    return 0;
+  }
+  Serial.println("uwu");
   String stringToInterpret = keymap_ptr->get(layer,button);
   char charToInterpret;
   bool inBuffer = 0;
@@ -115,6 +148,54 @@ void Keyboard::interpret(int layer, int button){
           #ifdef SERIAL_DEBUG
           Serial.print("plain flag set");
           #endif
+          continue;
+        }
+        if(stringToInterpret.indexOf("STRG", i+1) == i+1){
+          i += 4;
+          interpreterBuffer.push_back(new Keysycode(HID_KEY_CONTROL_LEFT,0,RID_KEYBOARD));
+          continue;
+        }
+        if(stringToInterpret.indexOf("SHIFT", i+1) == i+1){
+          i += 5;
+          interpreterBuffer.push_back(new Keysycode(HID_KEY_SHIFT_LEFT,0,RID_KEYBOARD));
+          continue;
+        }
+        if(stringToInterpret.indexOf("ALTGR", i+1) == i+1){
+          i += 5;
+          interpreterBuffer.push_back(new Keysycode(HID_KEY_ALT_RIGHT,0,RID_KEYBOARD));
+          continue;
+        }
+        if(stringToInterpret.indexOf("ALT", i+1) == i+1){
+          i += 3;
+          interpreterBuffer.push_back(new Keysycode(HID_KEY_ALT_LEFT,0,RID_KEYBOARD));
+          continue;
+        }
+        if(stringToInterpret.indexOf("TAB", i+1) == i+1){
+          i += 3;
+          interpreterBuffer.push_back(new Keysycode(HID_KEY_TAB,0,RID_KEYBOARD));
+          continue;
+        }
+        if(stringToInterpret.indexOf("SEND", i+1) == i+1){
+          i += 4;
+          interpreterBuffer.push_back(new Keysycode(0,0,RID_KEYBOARD,1));
+          continue;
+        }
+        if(stringToInterpret.indexOf("SWITCH{", i+1) == i+1){
+          i += 7;
+          uint8_t brc = stringToInterpret.indexOf("}", i);
+          uint8_t layerIndex = 0;
+          if(brc != -1 && (brc-i) <= 3){
+            String num = stringToInterpret.substring(i+1, brc);
+            for(int i = 0; i < num.length(); i++){
+              layerIndex *= 10;
+              layerIndex += num.charAt(i) - 48;
+            }
+            if((layerIndex <= 0)&&(layerIndex > this->ammountLayers)){
+            layerIndex = this->currentLayer;
+            }
+            this->currentLayer = layerIndex;
+            i = brc;            
+          }
           continue;
         }
       }
@@ -204,34 +285,18 @@ void Keyboard::interpret(int layer, int button){
       //cout<<"send funny to the power of symbol thingymabob"<<endl;
         continue;
     }
+    if(charToInterpret == '-'){
+      interpreterBuffer.push_back(new Keysycode(0x38, 0, RID_KEYBOARD));
+      continue;
+    }
     if(charToInterpret == 92){
       interpreterBuffer.push_back(new Keysycode(HID_KEY_MINUS,KEYBOARD_MODIFIER_RIGHTALT,RID_KEYBOARD));
       continue;
     }
   }
+  return 1;
 }
 /////////////////////////////////////////////////////////////end////////////////////////////////////////////////////////////////////////
-
-
-void Keyboard::init(){          //sets up flash and runs initial read of file
-  
-  usb_hid.begin();
-  int i = 0;
-  while( !TinyUSBDevice.mounted() && (i < 30)){
-    delay(100);
-    i++;
-    Serial.print("Crashing");
-  }
-  if(i >=30){
-    this->bluetoothMode = 1;
-    Serial.print("Bluetooth mode started!");
-  }
-  keymap_ptr = std::unique_ptr<Keymap>(new Keymap(filename, ammountLayers, ammountKeys));
-  keymap_ptr->init();
-  interpreterBuffer.push_back(new Keysycode(0,0,RID_KEYBOARD));
-  flash_setup();
-  readFile();
-}
 
 bool Keyboard::fsChanged(){
   if(check_fs_changed()){
@@ -247,6 +312,8 @@ void Keyboard::send_buffer(){
   uint8_t keycodeBuffer[6] = {0};
   uint8_t bufferIndex = 0;
   
+  if(HIDEnabled == 0) return;
+
   if(!(this->bluetoothMode)){
     //#ifdef SERIAL_DEBUG
     Serial.println("---------Send Buffer---------");
@@ -266,6 +333,20 @@ void Keyboard::send_buffer(){
       Serial.println("\t");
       //#endif
 
+      if(interpreterBuffer.at(i)->immediateSend == 1){      //If immediateSend flag is set, ignore Keycodes in this Keysycode and send what has been set in the Buffer. Previous modifier will be used
+        uint8_t modifier = 0;
+        if(i > 0){
+          modifier = interpreterBuffer.at(i-1)->modifier;
+        }
+        while(!usb_hid.ready());
+        usb_hid.keyboardReport(RID_KEYBOARD, modifier, keycodeBuffer);
+        while(!usb_hid.ready());
+        usb_hid.keyboardRelease(RID_KEYBOARD);
+        for(int i = 0; i < 6; i++){
+          keycodeBuffer[i] = 0;
+        }
+        i++;
+      }
       if( ( bufferIndex < 6 ) && ( interpreterBuffer.at(i+1)->modifier == interpreterBuffer.at(i)->modifier ) && (interpreterBuffer.at(i+1)->keycode != interpreterBuffer.at(i)->keycode)){
         keycodeBuffer[bufferIndex] = interpreterBuffer.at(i)->keycode;
         bufferIndex++;
@@ -320,6 +401,17 @@ void Keyboard::send_buffer(){
   else{
     interpreterBuffer.push_back(new Keysycode(0,0,0));
     for(int i = 0; i < (interpreterBuffer.size()-1); i++){
+      if(interpreterBuffer.at(i)->immediateSend == 1){      //If immediateSend flag is set, ignore Keycodes in this Keysycode and send what has been set in the Buffer. Previous modifier will be used
+        uint8_t modifier = 0;
+        if(i > 0){
+          modifier = interpreterBuffer.at(i-1)->modifier;
+        }
+        KeycodeSendBuffer.push_back(new KeysycodeSendBuffer(keycodeBuffer, modifier));
+        for(int i = 0; i < 6; i++){
+          keycodeBuffer[i] = 0;
+        }
+        i++;
+      }
       if( ( bufferIndex < 6 ) && ( interpreterBuffer.at(i+1)->modifier == interpreterBuffer.at(i)->modifier ) && (interpreterBuffer.at(i+1)->keycode != interpreterBuffer.at(i)->keycode)){
           keycodeBuffer[bufferIndex] = interpreterBuffer.at(i)->keycode;
           bufferIndex++;
@@ -407,10 +499,11 @@ void Keyboard::send_keycode_buffer(){
 
 //////////////////////////////////////////////////////Keysycode////////////////////////////////////////////////////////////////////////////////
 
-Keysycode::Keysycode(uint8_t keycode, uint8_t modifier, uint8_t reportID){
+Keysycode::Keysycode(uint8_t keycode, uint8_t modifier, uint8_t reportID, uint8_t immediateSend){
   this->keycode = keycode;
   this->modifier = modifier;
   this->reportID = reportID;
+  this->immediateSend = immediateSend;
 }
 
 ////////////////////////////////////////////////KeysycodeSendBuffer///////////////////////////////////////////////////////////////////////////

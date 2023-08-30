@@ -16,10 +16,11 @@
 
 class Keysycode{
   public:
-    Keysycode(uint8_t keycode, uint8_t modifier, uint8_t reportID);
+    Keysycode(uint8_t keycode, uint8_t modifier, uint8_t reportID, uint8_t immediateSend = 0);
     uint8_t keycode;
     uint8_t modifier;
     uint8_t reportID;
+    uint8_t immediateSend;
 };
 
 class KeysycodeSendBuffer{
@@ -35,8 +36,10 @@ public:
   String get_string_from_file(int layer, int button);                         //Mainly for debugging
   void set_string_in_file(int layer, int button, String string_to_write);     //Mainly for debugging
   void readFile();                          //Read File in to structure
-  void interpret(int layer, int button);    //write Characters from file Setup
+  uint8_t interpret(int layer, int button);    //write Characters from file Setup
   void init();                              //setup shit. Call in setup()
+  void disableHID();                        //must be called before init()
+  bool HIDdisabled();
   bool fsChanged();       //returns file system change status and resets Change Status on call
   Keyboard(String filename = "macroLayout.txt", int ammountLayers = 5, int ammountKeys = 32, uint8_t bluetoothAddress = 0x69);
   void gamepad_test(int test_state, int logic);
@@ -44,6 +47,7 @@ public:
   void gamepad_test_reset();
   void send_buffer();
   void send_keycode_buffer();
+  uint8_t currentLayer = 1;                               //Use this Variable in interpret() call, if you plan to use internal Layer management via the Mapping file
 private:
   std::unique_ptr<Keymap> keymap_ptr;
   String sendString;
@@ -54,6 +58,7 @@ private:
   std::vector <Keysycode *> interpreterBuffer;            //Buffer to store Keycodes to be sent
   std::vector <KeysycodeSendBuffer *> KeycodeSendBuffer;  //Buffer to send Keycodes as sendable Bundle to Bluetooth Board
   bool bluetoothMode = 0;
+  bool HIDEnabled = 1;
   uint8_t bluetoothAddress;
 };
 

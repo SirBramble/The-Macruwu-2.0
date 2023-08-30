@@ -5,8 +5,6 @@
 #include <vector>
 #include <Arduino.h>
 
-
-#define AMMOUNT_KEYS 32
 //#define SERIAL_DEBUG      //Uncomment to enable Debugging
 void flash_setup();
 void flash_loop();          //Returns contens of drive, when it is updated
