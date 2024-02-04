@@ -1,0 +1,43 @@
+delayTime: 55
+Found Lines: 1000
+Errors: 2
+
+delayTime: 50
+Found Lines: 1000
+Errors: 3
+
+delayTime: 45
+Found Lines: 1000
+Errors: 6
+
+delayTime: 40
+Found Lines: 1000
+Errors: 1
+
+delayTime: 35
+Found Lines: 1000
+Errors: 0
+
+delayTime: 30
+Found Lines: 1000
+Errors: 0
+
+delayTime: 25
+Found Lines: 1000
+Errors: 1
+
+delayTime: 20
+Found Lines: 1000
+Errors: 1
+
+delayTime: 15
+Found Lines: 1000
+Errors: 10
+
+delayTime: 10
+Found Lines: 977
+Errors: 489
+
+delayTime: 5
+Found Lines: 69
+Errors: 67

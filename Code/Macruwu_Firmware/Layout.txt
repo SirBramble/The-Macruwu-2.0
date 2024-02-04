@@ -1,0 +1,109 @@
+%                              Keymap Layout Example
+% ----------------------------------------------------------------------------------------
+% Use "begin(MODULENAME)" and "end(MODULENAME)" to enclose mapping for a module
+% Use "Layer x"  to set the layer for all following Button mappings
+% 	Optionally you can use COLOR{effect,color,speed} to set the global layer lighting effect TM
+% Use "Button x: ..." to set text/commands to be executed when button x is pressed
+% Commands / special characters:
+% ------------------------------
+% \TAB_KEY 	--> Tabstop
+% \ENTER_KEY 	--> Enter
+% \RSHIFT_KEY	--> Right shift key
+% \LSHIFT_KEY	--> Left shift key
+% \RCTRL_KEY	--> Right control key
+% \LCTRL_KEY	--> Left control key
+% \STRG{LETTER}	--> Combination STRG/CTRL + LETTER
+% \RALT_KEY	--> Right alt key
+% \LALT_KEY	--> Left alt key
+% \SPACE_KEY	--> Space key
+% \WIN_KEY	--> Windows key
+% \APP_KEY	--> FN/APP key
+% \TAB_KEY	--> Tabstop
+% \LEFT_KEY	--> Left arrow key 1x
+% \LEFT_KEY{X}	--> Left arrow key Xx
+% \RIGHT_KEY	--> Right arrow key 1x
+% \RIGHT_KEY{X}	--> Right arrow key Xx
+% \LAYER{x}	--> switches to layer x
+% -------------------------------------------------------------------------------------------
+% Example:
+% -------------------------------------------------------------------------------------------
+% begin(macruwu)
+% Layer 1
+%     Button 1: \frac{}{}\LEFT_KEY{3}
+%     Button 2: e
+%     Button 3: \STRGa\SEND\STRGx\SENDSend picures of spiderman to me\ALTGRq\SENDspidermanpictures.web\STRGv
+%     Button 4: something on Layer 1
+%     Button 5: \LAYER{2}
+% Layer 2 COLOR{CONST,GREEN,10}
+%     Button 1: if you switched to layer 2 you will see this text if you press button 1
+%     Button 2: \LAYER{1}
+% end(macruwu)
+% -------------------------------------------------------------------------------------------
+begin(macruwu)
+Layer 1 
+	Button 1: \frac{}{}\LEFT_KEY{3}
+	Button 2: e
+	Button 3: ^{}\LEFT_KEY
+	Button 4: \underline{}\LEFT_KEY
+    	Button 5: _{}\LEFT_KEY
+    	Button 6: \sqrt{}\LEFT_KEY
+    	Button 7: \infty
+    	Button 8: $$\LEFT_KEY
+    	Button 9: \begin{pmatrix}\end{pmatrix}\LEFT_KEY{13}
+    	Button 10: \left[\begin{array}{c c}\end{array}\right]\LEFT_KEY{18}
+    	Button 11: \vec 
+    	Button 12: \times 
+    	Button 13: \left|\right|\LEFT_KEY{7}
+    	Button 14: 
+    	Button 15: 
+    	Button 16: 
+    	Button 17: \left\{\begin{array}{l}\end{array}\right.\LEFT_KEY{18}
+    	Button 18: \left.\begin{array}{l}\end{array}\right\}\LEFT_KEY{19}
+    	Button 19: \underbrace{}_{}\LEFT_KEY{4}
+    	Button 20: \overbrace{}^{}\LEFT_KEY{4}
+    	Button 21: \SI{}{}\LEFT_KEY{3}
+    	Button 22: 
+    	Button 23:
+    	Button 24: \mintinline{c}{
+    	Button 25: \sum\limits_{}^{}\LEFT_KEY{4}
+    	Button 26: \int\limits_{}^{}\LEFT_KEY{4}
+    	Button 27: \lim\limits_{}\LEFT_KEY
+    	Button 28: \mathscr{L}\left\{\right\}\LEFT_KEY{8}
+    	Button 29: \LAYER{2}
+    	Button 30: \overset{!}{=} 
+    	Button 31: \quad \Rightarrow \quad 
+    	Button 32: \longmapsto 
+Layer 2 COLOR{CONST,GREEN,10}
+    	Button 1: \STRG{c}\frac{}{}\LEFT_KEY{3}\STRG{v}
+	Button 2: \STRG{c}e\STRG{v}
+	Button 3: \STRG{c}^{}\LEFT_KEY\STRG{v}
+	Button 4: \STRG{c}\underline{}\LEFT_KEY\STRG{v}
+    	Button 5: \STRG{c}_{}\LEFT_KEY\STRG{v}
+    	Button 6: \STRG{c}\sqrt{}\LEFT_KEY\STRG{v}
+    	Button 7: \STRG{c}\infty\STRG{v}
+    	Button 8: \STRG{c}$$\LEFT_KEY\STRG{v}
+    	Button 9: \STRG{c}\begin{pmatrix}\end{pmatrix}\LEFT_KEY{13}\STRG{v}
+    	Button 10: \STRG{c}\left[\begin{array}{c c}\end{array}\right]\LEFT_KEY{18}\STRG{v}
+    	Button 11: \vec 
+    	Button 12: \times
+    	Button 13: \STRG{c}\left|\right|\LEFT_KEY{7}\STRG{v}
+    	Button 14: 
+    	Button 15: 
+    	Button 16: 
+    	Button 17: \STRG{c}\left\{\begin{array}{l}\end{array}\right.\LEFT_KEY{19}\STRG{v}
+    	Button 18: \STRG{c}\left.\begin{array}{l}\end{array}\right\}\LEFT_KEY{19}\STRG{v}
+    	Button 19: \STRG{c}\underbrace{}_{}\LEFT_KEY{4}\STRG{v}
+    	Button 20: \STRG{c}\overbrace{}^{}\LEFT_KEY{4}\STRG{v}
+    	Button 21: \STRG{c}\SI{}{}\LEFT_KEY{3}\STRG{v}
+    	Button 22: 
+    	Button 23:
+    	Button 24: \mintinline{c}{
+    	Button 25: \STRG{c}\sum\limits_{}^{}\LEFT_KEY{4}\STRG{v}
+    	Button 26: \STRG{c}\int\limits_{}^{}\LEFT_KEY{4}\STRG{v}
+    	Button 27: \STRG{c}\lim\limits_{}\LEFT_KEY\STRG{v}
+    	Button 28: \STRG{c}\mathscr{L}\left\{\right\}\LEFT_KEY{8}\STRG{v}
+    	Button 29: \LAYER{1}
+    	Button 30: \overset{!}{=} 
+    	Button 31: \quad \Rightarrow \quad 
+    	Button 32: \longmapsto 
+end(macruwu)

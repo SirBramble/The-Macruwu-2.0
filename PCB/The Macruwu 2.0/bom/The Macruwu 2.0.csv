@@ -1,0 +1,15 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"U3,U15,U14,U8,U5,U22,U16,U18,U28,U17,U20,U32,U2,U9,U10,U29,U25,U23,U31,U6,U12,U4,U7,U19,U30,U1,U11,U26,U24,U21,U27,U13";"Multi Hotswap with RGB";32;"Multi_Hotswap_with_RGB";;;
+2;"U33";"Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM-MINIMAL-PADS";1;"SeeeduinoXIAO";;;
+3;"R3,R4,R1,R2,R11";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";5;"10k";;;
+4;"S1,S2";"SJ235954BSMTTR";2;"SJ2-35954B-SMT-TR";;;
+5;"J2";"PinHeader_1x04_P2.54mm_Vertical";1;"I²C 5V 2";;;
+6;"J3";"PinHeader_1x04_P2.54mm_Vertical";1;"I²C 5V 3";;;
+7;"J1";"PinHeader_1x04_P2.54mm_Vertical";1;"I²C 5V 1";;;
+8;"C9,C7,C2,C20,C24,C18,C1,C19,C22,C11,C25,C28,C5,C35,C14,C34,C32,C13,C17,C16,C21,C27,C33,C29,C31,C3,C30,C26,C6,C12,C10,C8,C23,C4,C15,C36";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";36;"100n";;;
+9;"R5,R10,R6,R9,R8,R7";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";6;"2k2";;;
+10;"IC2,IC1";"SOP65P640X120-24N";2;"PI4IOE5V6416LEX";;;
+11;"D1";"CD123DB140LR";1;"CD123D-B140LR";;;
+12;"R12";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";1;"330";;;
+13;"IC3";"SOP65P640X120-14N";1;"LSF0204QPWRQ1";;;
+14;"J4";"PinHeader_1x05_P2.54mm_Vertical";1;"Battery Bluetooth Expansion";;;
