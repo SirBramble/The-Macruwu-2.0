@@ -16,8 +16,8 @@ i2cInterface::i2cInterface(uint8_t *_registered_addresses, uint8_t _size){
 }
 
 void i2cInterface::init(){
-  //sda_set = Wire.setSDA(PIN_SDA);
-  //scl_set = Wire.setSCL(PIN_SCL);
+  sda_set = Wire.setSDA(PIN_SDA);
+  scl_set = Wire.setSCL(PIN_SCL);
   Wire.begin();
   for(int i = 0; i < I2C_BUFFER_SIZE; i++){
     button_states[i] = 0;
@@ -51,6 +51,7 @@ void i2cInterface::probe(){
 }
 
 void i2cInterface::update(uint8_t address){
+  uint8_t error;
   bool addressIsValid = 0;
   for(int i = 0; i < I2C_BUFFER_SIZE; i++){
       button_states[i] = 0;
@@ -69,25 +70,27 @@ void i2cInterface::update(uint8_t address){
     current_command = GET_STATES;
     Wire.beginTransmission(address);
     Wire.write(GET_STATES);
-    Wire.endTransmission();
+    error = Wire.endTransmission();
     delay(1);
   }
-  Wire.requestFrom(address, I2C_BUFFER_SIZE, true);
-  uint8_t i = 0;
-  
-  while(Wire.available() && i < I2C_BUFFER_SIZE){
-    button_states[i] = Wire.read();
-    for(int i = 0; i < I2C_BUFFER_SIZE; i++){
-      if(button_states[i] > 0){
-        //Serial.print(pressed[i]);
-        //Serial.print("button pressed I2C: ");Serial.println(i);
+  if(error == 0){
+    Wire.requestFrom(address, I2C_BUFFER_SIZE, true);
+    uint8_t i = 0;
+    
+    while(Wire.available() && i < I2C_BUFFER_SIZE){
+      button_states[i] = Wire.read();
+      for(int i = 0; i < I2C_BUFFER_SIZE; i++){
+        if(button_states[i] > 0){
+          //Serial.print(pressed[i]);
+          //Serial.print("button pressed I2C: ");Serial.println(i);
+        }
       }
+      i++;
     }
-    i++;
-  }
-  while(i < I2C_BUFFER_SIZE){
-    button_states[i] = 0;
-    i++;
+    //while(i < I2C_BUFFER_SIZE){
+    //  button_states[i] = 0;
+    //  i++;
+    //}
   }
 }
 

@@ -204,10 +204,31 @@ void hidInterface::clear(uint8_t reportID){
 //////////////////////////////MIDI_INTERFACE//////////////////////////
 
 void hidInterface::sendMidi_Analog(key * inputKey, uint8_t value){
-  if(!inputKey->isMIDI) {
+  if(inputKey == NULL) {
     Serial.printf("nullptr\n");
     return;
   }
+
+  if(value != midi_value_storage[inputKey->MIDI_channel][inputKey->MIDI_data1]){
+    midi_value_storage[inputKey->MIDI_channel][inputKey->MIDI_data1] = value;
+    switch (inputKey->MIDI_mode) {
+      case MIDI_CC:
+        MIDI.sendControlChange(inputKey->MIDI_data1, value, inputKey->MIDI_channel);
+        Serial.printf("Sending MIDI CC value: %d on channel %d\n", value, inputKey->MIDI_channel);
+        break;
+      default:
+        break;
+    }
+  }
+}
+
+void hidInterface::sendMidi_Digital(key * inputKey, bool state){
+  if(inputKey == NULL) {
+    Serial.printf("nullptr\n");
+    return;
+  }
+
+  uint8_t value = state ? 255 : 0;
   if(value != midi_value_storage[inputKey->MIDI_channel][inputKey->MIDI_data1]){
     midi_value_storage[inputKey->MIDI_channel][inputKey->MIDI_data1] = value;
     switch (inputKey->MIDI_mode) {
@@ -229,12 +250,24 @@ bool hidInterface::get_midi_CC_state(uint8_t channel, uint8_t number){
   return midi_CC_state_storage[channel][number];
 }
 
+bool hidInterface::get_midi_CC_state(key * inputKey){
+  return midi_CC_state_storage[inputKey->MIDI_channel][inputKey->MIDI_data1];
+}
+
 bool hidInterface::get_midi_CC_update_available(uint8_t channel, uint8_t number){
   return midi_CC_update_available[channel][number];
 }
 
+bool hidInterface::get_midi_CC_update_available(key * inputKey){
+  return midi_CC_update_available[inputKey->MIDI_channel][inputKey->MIDI_data1];
+}
+
 void hidInterface::set_midi_CC_update_handled(uint8_t channel, uint8_t number){
   this->midi_signals_handled.push_back(((uint16_t)(channel))<<8 + (uint16_t)(number));
+}
+
+void hidInterface::set_midi_CC_update_handled(key * inputKey){
+  this->midi_signals_handled.push_back(((uint16_t)(inputKey->MIDI_channel))<<8 + (uint16_t)(inputKey->MIDI_data1));
 }
 
 void hidInterface::clear_midi_CC_update_available(){

@@ -57,15 +57,12 @@ void msc_flush_cb (void)
   fatfs.cacheClear();
 
   fs_changed = true;
-
-  //digitalWrite(LED_BUILTIN, LOW);
 }
 
 
 // the setup function runs once when you press reset or power the board
 void filesystemSetup()
 {
-  //pinMode(LED_BUILTIN, OUTPUT);
 
   flash.begin();
 
@@ -100,56 +97,6 @@ void filesystemSetup()
   Serial.print("Flash size: "); Serial.print(flash.size() / 1024); Serial.println(" KB");
   #endif
   fs_changed = true; // to print contents initially
-}
-
-void filesystemLoop()
-{
-  if ( fs_changed )
-  {
-    fs_changed = false;
-
-    // check if host formatted disk
-    if (!fs_formatted)
-    {
-      fs_formatted = fatfs.begin(&flash);
-    }
-
-    // skip if still not formatted
-    if (!fs_formatted) return;
-
-    Serial.println("Opening root");
-
-    if ( !root.open("/") )
-    {
-      Serial.println("open root failed");
-      return;
-    }
-
-    Serial.println("Flash contents:");
-
-    // Open next file in root.
-    // Warning, openNext starts at the current directory position
-    // so a rewind of the directory may be required.
-
-    while ( file.openNext(&root, O_RDONLY) )
-    {
-      file.printFileSize(&Serial);
-      Serial.write(' ');
-      file.printName(&Serial);
-      if ( file.isDir() )
-      {
-        // Indicate a directory.
-        Serial.write('/');
-      }
-      Serial.println();
-      file.close();
-    }
-
-    root.close();
-
-    Serial.println();
-
-  }
 }
 
 bool check_fs_changed(){
@@ -757,7 +704,7 @@ void interpreter::interpret(key * inputKey, String inputString){
       inputKey->appendKeysycode(0x4F, 0, RID_KEYBOARD, 1);
       inputString.remove(0, 10);
     }
-    else if(inputSearch.Match("^(\\MIDI_CC%{)([%d]+),([%d]+)%}") == REGEXP_MATCHED){  // \MIDI_CC{CHANNEL,CONTROL_NUM}   //Get value from Poti
+    else if(inputSearch.Match("^(\\MIDI_CC%{)([%d]+),([%d]+)%}") == REGEXP_MATCHED){  // \MIDI_CC{CONTROL_NUM,CHANNEL}   //Get value from Poti
       Serial.println("found MIDI_CC");
       inputKey->isAnalog = 1;
       inputKey->isMIDI = 1;
@@ -766,7 +713,7 @@ void interpreter::interpret(key * inputKey, String inputString){
       inputKey->MIDI_channel = atoi(inputSearch.GetCapture(buff, 2));
       inputString.remove(0, inputString.indexOf("}")+1);
     }
-    else if(inputSearch.Match("^(\\MIDI_CC_KEY%{)([%d]+),([%d]+)%}") == REGEXP_MATCHED){  // \MIDI_CC{CHANNEL,CONTROL_NUM}   //Get value from Poti
+    else if(inputSearch.Match("^(\\MIDI_CC_KEY%{)([%d]+),([%d]+)%}") == REGEXP_MATCHED){  // \MIDI_CC_KEY{CONTROL_NUM,CHANNEL}   //Get key state
       Serial.println("found MIDI_CC_KEY");
       inputKey->isMIDI = 1;
       inputKey->MIDI_mode = MIDI_CC;
@@ -789,7 +736,7 @@ void interpreter::interpret(key * inputKey, String inputString){
       inputKey->color = ((uint32_t)r << 16) | ((uint32_t)g << 8) | b;
       inputString.remove(0, inputString.indexOf("}")+1);
     }
-    else if(inputSearch.Match("^(\\LAYER%{)([%d]+)%}") == REGEXP_MATCHED){  // \MIDI_CC{CHANNEL,CONTROL_NUM}   //Get value from Poti
+    else if(inputSearch.Match("^(\\LAYER%{)([%d]+)%}") == REGEXP_MATCHED){  // \LAYER{LAYER_NUM}   //Get value from Poti
       Serial.println("found Layer change");
       inputKey->hasLayerChange = true;
       inputKey->changeToLayer = atoi(inputSearch.GetCapture(buff,1));
@@ -904,8 +851,10 @@ color_mode_t interpreter::string_to_color_mode(char *input){
   std::string buffer;
 
   buffer.append(input);
-
-  if(buffer.find("PRESSED",0) != -1 || buffer.find("pressed",0) != -1){
+  if(buffer.find("CONST",0) != -1 || buffer.find("const",0) != -1){
+    return const_color;
+  }
+  else if(buffer.find("PRESSED",0) != -1 || buffer.find("pressed",0) != -1){
     return pressed;
   }
   else if(buffer.find("NOT PRESSED",0) != -1 || buffer.find("not pressed",0) != -1){

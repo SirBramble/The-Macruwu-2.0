@@ -143,8 +143,16 @@ _numpad::_numpad(String moduleName, uint8_t address) : module(moduleName){
   this->_address = address;
 }
 
+void _numpad::init(i2cInterface *i2c){
+  this->i2c = i2c;
+}
+
 uint8_t _numpad::address(){
   return _address;
+}
+
+bool _numpad::registered(){
+  return i2c->isAddressValid(this->_address);
 }
 
 uint16_t *_numpad::get_led_remap(){
@@ -158,7 +166,11 @@ uint16_t _numpad::remap_led_key(uint16_t key){
   return this->led_remap[key];
 }
 
-void _numpad::update(uint8_t * input){
+void _numpad::update(){
+  this->i2c->update(this->_address);
+  uint8_t * input = this->i2c->getStates(this->_address);
+  if(input == NULL) return;
+
   for(int i = 0; i < AMMOUNT_KEYS_NUMPAD; i++){
     pressed[i] = input[i];
   }

@@ -182,6 +182,7 @@ typedef struct Keysycode{
 
 typedef enum{
   no_override = 0,
+  const_color,
   pressed,
   not_pressed,
   toggle,

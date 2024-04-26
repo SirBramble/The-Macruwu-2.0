@@ -4,6 +4,7 @@
 
 #include "filesystem.h"
 #include "expander.h"
+#include "i2cinterface.h"
 
 #define AMMOUNT_KEYS 88
 #define AMMOUNT_KEYS_NUMPAD 27      // actually 23, but for testing adding buffer
@@ -119,9 +120,10 @@ private:
 class _numpad : public module{
 public:
   _numpad(String moduleName, uint8_t address);
-  void init();
+  void init(i2cInterface *i2c);
   uint8_t address();
-  void update(uint8_t * input);
+  bool registered();
+  void update();
   bool isPressed_hold(int position);
   bool isReleased_hold(int position);      //true if released
   bool isPressed_single(int position);
@@ -135,6 +137,7 @@ private:
   uint16_t led_remap[AMMOUNT_KEYS] = {NUMPAD_KEY_TO_LED};
   //SM
   _state states[AMMOUNT_KEYS_NUMPAD];
+  i2cInterface *i2c = NULL;
 };
 
 class _macruwu : public module{

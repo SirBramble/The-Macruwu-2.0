@@ -4,8 +4,8 @@
 #include "Wire.h"
 #include <vector>
 
-//#define PIN_SDA 4
-//#define PIN_SCL 5
+#define PIN_SDA 4
+#define PIN_SCL 5
 
 #define I2C_BUFFER_SIZE 32    // According to Arduino documentation the buffer for a I2C trans is 32 bytes.
                               // With the RP2040 the buffer is 128 bytes. May need to limit to 32 bytes to keep compatibility with other MCUs.

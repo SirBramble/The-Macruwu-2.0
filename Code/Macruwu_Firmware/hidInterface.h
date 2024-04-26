@@ -14,10 +14,14 @@ public:
   void release(key * inputKey);     //release single key
   void sendMacro(key * inputKey);
   void sendMidi_Analog(key * inputKey, uint8_t value);
+  void sendMidi_Digital(key * inputKey, bool state);
   bool readMidi();
   bool get_midi_CC_state(uint8_t channel, uint8_t number);
+  bool get_midi_CC_state(key * inputKey);
   bool get_midi_CC_update_available(uint8_t channel, uint8_t number);
+  bool get_midi_CC_update_available(key * inputKey);
   void set_midi_CC_update_handled(uint8_t channel, uint8_t number);
+  void set_midi_CC_update_handled(key * inputKey);
   void clear_midi_CC_update_available();
   bool bluetooth_mode = 0;
 private:

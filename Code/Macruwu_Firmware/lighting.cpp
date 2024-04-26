@@ -84,7 +84,7 @@ bool RGB_LIGHTING::disable_override(uint16_t position){
 
   this->effect_override[led_remap[position]] = false;
 
-  this->strip->setPixelColor(led_remap[position], 0);
+  //this->strip->setPixelColor(led_remap[position], 0);
 
   return true;
 }
