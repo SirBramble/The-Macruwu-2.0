@@ -7,8 +7,8 @@
 
 
 /////////////////////////////////////////////// Choose your base ///////////////////////////////////////////////
-//#define IS_MACRUWU
-#define IS_KEYBOARD
+#define IS_MACRUWU
+//#define IS_KEYBOARD
 
 
 #define MACRUWU_VERSION 2
@@ -62,10 +62,11 @@ void setup() {
   #endif
 
   #ifdef IS_MACRUWU
-  lighting_macruwu.setup();
-  lighting_macruwu.set_led_remap(macruwu.get_led_remap(), macruwu.get_ammount_keys());
   macruwu.init(); // Dependant on I2C!! Call after i2c.init()!!
   macruwu.updateKeymapsFromFile();
+  lighting_macruwu.setup();
+  lighting_macruwu.set_led_remap(macruwu.get_led_remap(), macruwu.get_ammount_keys());
+  
   #endif
 
   if(hid.bluetooth_mode == 0){

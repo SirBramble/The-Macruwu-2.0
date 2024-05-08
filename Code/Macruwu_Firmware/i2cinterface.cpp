@@ -16,8 +16,10 @@ i2cInterface::i2cInterface(uint8_t *_registered_addresses, uint8_t _size){
 }
 
 void i2cInterface::init(){
+  #ifdef IS_KEYBOARD
   sda_set = Wire.setSDA(PIN_SDA);
   scl_set = Wire.setSCL(PIN_SCL);
+  #endif
   Wire.begin();
   for(int i = 0; i < I2C_BUFFER_SIZE; i++){
     button_states[i] = 0;
